@@ -3,6 +3,7 @@
 
         "username": "root",
         "password": "root",
+        "use_env_variable": "JAWSDB_URL",
         "database": "exampledb",
         "host": "127.0.0.1",
         "dialect": "mysql"
@@ -17,7 +18,8 @@
     "production": {
         "username": "root",
         "password": "root",
-        "database": "sequelize_passport",
+        "use_env_variable": "JAWSDB_URL",
+        "database": "exampledb",
         "host": "127.0.0.1",
         "dialect": "mysql"
     }
