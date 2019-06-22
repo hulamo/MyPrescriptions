@@ -1,0 +1,39 @@
+<!-- views/doctorsList.handlebars -->
+
+
+<div class="container">
+  <h2>Patient Records: &nbsp;&nbsp; {{paciente}}</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Weight</th>
+        <th>Height</th>
+
+<th>Pulse</th>
+        <th>Prescription</th>
+        <th>Observations</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      {{#each recs}}
+      <tr>
+        <td>{{formatdate this.createdAt}}</td>
+        <td>{{this.weight}}</td>
+        <td>{{this.height}}</td>
+        <td>{{this.pulse}}</td>
+        <td>{{this.prescription}}</td>
+        <td>{{this.observations}}</td>
+        
+      </tr>
+      {{/each}} 
+    </tbody>
+  </table>
+</div>
+
+
+
+<!--
+<script src="/js/index.js"></script>
+-->

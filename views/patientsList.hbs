@@ -1,0 +1,35 @@
+<!-- views/doctorsList.handlebars -->
+
+
+<div class="container">
+  <h2>My Patients</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Actions</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      {{#each recs}}
+      <tr>
+        <td>{{this.firstname}}</td>
+        <td>{{this.lastname}}</td>
+        <td>{{this.email}}</td>
+        <td>{{this.phone}}</td>
+        <td><a href="api/nuevareceta/{{this.id}}">New Prescription  </a> <a>&nbsp;&nbsp;</a> <a href="records/{{this.id}}">Records</a></td>
+      </tr>
+      {{/each}} 
+    </tbody>
+  </table>
+</div>
+
+
+
+<!--
+<script src="/js/index.js"></script>
+-->
