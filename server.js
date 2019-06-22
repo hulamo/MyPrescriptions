@@ -12,7 +12,7 @@
     //For BodyParser
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.json());
-    app.use(express.static("public"));
+    app.use(express.static(__dirname + "/public"));
 
     // For Passport
     app.use(session({ secret: 'keyboard cat', resave: true, saveUninitialized: true })); // session secret
